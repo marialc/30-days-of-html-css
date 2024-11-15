@@ -1,0 +1,59 @@
+.container {
+	background-color: yellow;
+	width: 20%;
+	border-radius: 0.3rem;
+	display: grid;
+	gap: 1.2rem;
+	grid-template-columns: 1fr 1fr 1fr;
+	padding: 0.2rem 0.2rem;
+}
+
+.box {
+	height: 75px;
+	width: 75px;
+	background-color: lightblue;
+	border-radius: 0.2rem;
+}
+
+.box:hover {
+	/* Start the wobble animation, lasting 0.7 seconds */
+	animation: wobble 0.7s;
+
+	/* Repeat the animation indefinitely */
+	animation-iteration-count: infinite;
+}
+
+@keyframes wobble {
+	/* Initial position: slight move down-right, no rotation */
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+
+	/* Small move up-left, slight left rotation */
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+
+	/* Larger move left, centered vertically, slight right rotation */
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+
+	/* Move right-down, back to no rotation */
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+
+	/* Move down-right, slight right rotation */
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+
+	/* Small move up-right, slight left rotation */
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+
+	/* Move left-up, no rotation */
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+
+	/* Move right-up, slight left rotation */
+	70% { transform: translate(3px, 1px) rotate(-1deg); }
+
+	/* Move left-down, slight right rotation */
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+
+	/* Small move up-right, back to no rotation */
+	90% { transform: translate(1px, 2px) rotate(0deg); }
+
+	/* Final position: slight move down-left, slight left rotation */
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
