@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+body {
+  font-family: "Inter", sans-serif; 
+  font-size: 16px; 
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.metrics-grid {
+  display: flex;
+  flex-direction: row;
+  border-radius: 8px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.metric-card {
+  background-color: white;
+  padding: 20px;
+  flex: 1;
+}
+
+.metric-label {
+  font-size: 16px;
+  font-weight: 500;
+  color: #121826;
+  margin: 0 0 10px 0;
+}
+
+.metric-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.metric-main {
+  display: flex;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.metric-value {
+  font-size: 24px;
+  font-weight: bold;
+  color: #4f46e5;
+}
+
+.metric-previous {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.metric-change {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  font-weight: 600;
+  padding: 4px 8px;
+  border-radius: 9999px;
+}
+
+.metric-change.positive {
+  background-color: #d1fae5;
+  color: #047857;
+}
+
+.metric-change.negative {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.metric-change.positive .change-icon {
+  stroke: #5ec269;
+}
+
+.metric-change.negative .change-icon {
+  stroke: #dd524c;
+}
+
+.change-icon {
+  width: 14px;
+  height: 14px;
+  margin-right: 4px;
+}
+
+/* Desktop styles */
+@media (min-width: 769px) {
+  .metric-card.first {
+      border-top-left-radius: 8px;
+      border-bottom-left-radius: 8px;
+      border-right: 1.5px solid #e5e7eb;
+  }
+  
+  .metric-card.last {
+      border-top-right-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-left: 1.5px solid #e5e7eb;
+  }
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .metrics-grid {
+      flex-direction: column;
+  }
+  
+  .metric-card.first {
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      border-bottom: 1.5px solid #e5e7eb;
+  }
+  
+  .metric-card.last {
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      border-top: 1.5px solid #e5e7eb;
+  }
+}
