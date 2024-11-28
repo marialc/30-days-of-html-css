@@ -1,0 +1,1 @@
+1. Make the give article element non-selectable using the cursor

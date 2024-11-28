@@ -1,0 +1,4 @@
+.text {
+  -webkit-user-select: none; /* Safari */
+  user-select: none; /* Standard syntax */
+}
