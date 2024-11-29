@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
+:root {
+  --text-color:#a1a1aa;
+  --bg: #27272a;
+  --white: #ffffff;
+  --nav-bg: #18181b;
+  --border: #3f3f45;
+  --btn-accent: #5046e5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Inter, sans-serif;
+  font-size: 14px;
+  background-color: var(--bg);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.625rem 1rem 0.625rem 1.18rem;
+  background-color: var(--nav-bg);
+  border-bottom: 2px solid var(--border);
+}
+
+#company {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.logo-icon {
+  width: 28px;
+  height: 28px;
+  margin-right: 8px;
+}
+
+#company h2 {
+  font-family: "Inter", sans-serif;
+  font-variation-settings: 'wght' 550;
+  font-size: 1.25rem;
+  color: var(--white);
+}
+
+#nav-links {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  gap: 33px;
+  padding: 0;
+  margin-left: 25px;
+  flex-grow: 2;
+}
+
+#nav-links a {
+  color: #a1a1aa;
+  text-decoration: none;
+  font-size: 0.90rem;
+  font-weight: 400;
+  transition: color 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+#nav-links a:hover {
+  color: var(--white);
+}
+
+#nav-links a:hover .dropdown-arrow {
+  filter: brightness(1.8);
+  transition: filter 0.3s ease-in-out;
+}
+
+.dropdown-arrow {
+  width: 16px;
+  height: 16px;
+  margin-left: 2px;
+}
+
+#auth-buttons {
+  display: flex;
+}
+
+button {
+  font-size: 0.998em;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  padding: 0.6em 0.9em;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.login-btn, .get-started-btn {
+  font-family: 'Inter', sans-serif;
+  font-variation-settings: 'wght' 550;
+}
+
+.login-btn {
+  background-color: transparent;
+  color: var(--text-color);
+  transition: color 0.3s;
+}
+
+.login-btn:hover {
+  color: var(--white);
+}
+
+.get-started-btn {
+  background-color: #5046e5;
+  color: var(--white);
+  transition: background-color 0.3s;
+}
+
+.get-started-btn:hover {
+  background-color: #4338ca;
+}
+
