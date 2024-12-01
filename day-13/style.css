@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Cabin", sans-serif;
+	font-size: 15px;
+  display: flex;              
+  justify-content: center;    
+  align-items: center;        
+  height: 100vh;              
+  margin: 0;    
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  width: 100%;
+}
+
+.post {
+	max-width: 770px;
+  width: 100%;
+	height: auto;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	display: flex;
+	flex-direction: column; 
+}
+
+.header {
+	width: 100%;
+	padding: 10px 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.name {
+	font-size: 1.10em;
+	font-weight: 500;
+}
+
+.image {
+	width: 100%;              
+	margin: 0 auto;     
+}
+  
+.image img {
+  width: 100%;  
+  height: auto;      
+  max-height: 512px;  
+  object-fit: cover;  
+}
+
+.toolbar {
+	display: flex;
+  justify-content: space-between;
+	padding: 10px 8px 17px 15px;
+}
+
+.toolbar img,
+.header img {
+  cursor: pointer;
+}
+
+.left {
+	display: flex;
+	justify-content: flex-start;
+  gap: 16px;
+}
+
+.right {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.description {
+  padding: 10px 15px;
+  font-size: 1.017em;
+}
