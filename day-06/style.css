@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap');
+
+:root {
+  --background: #f4f4f5;
+  --card: #ffffff;
+  --text: #71717a;
+  --title: #000000;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: var(--background);
+  font-family: 'Inter', sans-serif;
+}
+
+main {
+  width: 100%;
+  max-width: 407px;
+  padding: 1rem;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 16px;
+  padding: 0.6rem 0.8rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.logo {
+  flex-shrink: 0;
+  width: 48px;
+  height: 48px;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.content {
+  flex: 1;
+  min-width: 0;
+}
+
+.title {
+  margin: 0 0 0.2rem;
+  font-size: 1.5rem;
+  line-height: 1.2;
+  color: var(--title);
+  font-weight: 700;
+}
+
+.description {
+  display: flex;
+  align-items: center;
+  gap: 0.17rem;
+  color: var(--text);
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+.dot {
+  color: var(--text);
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.collaborators {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.colab_avatars {
+  display: flex;
+}
+
+.colab_avatars img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 2px solid var(--card);
+  margin-right: -8px;
+  object-fit: cover;
+}
+
+.shared_with {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.shared_with strong {
+  font-weight: 700;
+}
+
