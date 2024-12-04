@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400..700&display=swap');
+
+/* 
+List of colors used 
+
+tooltip background : lightgray 
+tooltip border: darkgray 
+text: black 
+
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Inter", sans-serif;
+}
+
+button {
+	position: relative;
+	background-color: #eeefee;
+	border: 2px solid black;
+	border-radius: 3px;
+	font-size: 16px;
+	font-weight: 500;
+	color: black;
+	padding: 5px 10px;
+	margin: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+	background-color: #e3e4e3;
+}
+
+button:hover div {
+	opacity: 1;
+  visibility: visible;
+}
+
+.tooltip {
+	opacity: 0;
+	visibility: hidden;
+	position: absolute;
+	background-color: lightgray;
+	border: 2px solid darkgrey;
+	border-radius: 6px;
+	color: #f70203;
+	font-size: 1.2rem;
+	text-align: center;
+	width: 212px;
+	height: auto;
+	padding: 5px;
+	top: 140%;
+	left: 0%;
+}
+
+.tooltip::after {
+	content: "";
+	position: absolute;
+	bottom: 100%;
+	left: 50%;
+	margin-left: -5px;
+	border-width: 8px;
+	border-style: solid;
+	border-color: transparent transparent lightgrey transparent;
+}
+
+
+
