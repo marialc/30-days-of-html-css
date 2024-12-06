@@ -1,0 +1,1 @@
+1. Make the alternate rows of the given table to a same background color
