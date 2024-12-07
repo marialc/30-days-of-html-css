@@ -1,0 +1,1 @@
+1. Create a responsive mobile navbar which shows up after hitting a 640px width
