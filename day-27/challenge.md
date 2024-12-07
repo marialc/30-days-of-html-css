@@ -1,0 +1,1 @@
+1. Build a simple CSS Background using a pineapple SVG icon
