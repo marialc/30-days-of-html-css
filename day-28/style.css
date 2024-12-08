@@ -18,6 +18,7 @@ body {
 .container form {
   display: flex;
   background-color: var(--switch-bg);
+  border-radius: 5px;
 }
 
 .container form div {
