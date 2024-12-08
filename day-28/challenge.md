@@ -1,0 +1,1 @@
+1. Create a simple segment switch component using radio buttons
