@@ -1,0 +1,1 @@
+1. Build a profile header with header, profile image and two buttons
